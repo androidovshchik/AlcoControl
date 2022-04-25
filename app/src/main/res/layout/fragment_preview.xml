@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayBg">
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:id="@+id/zv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/v_bottom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_maxScale="3"
+        app:zoomage_minScale="0.3"
+        tools:src="@mipmap/ic_launcher" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_baseline_close_24"
+        app:backgroundTint="@color/colorGreen"
+        app:fabCustomSize="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="20dp"
+        app:tint="@android:color/white" />
+
+    <View
+        android:id="@+id/v_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.alcocontrol.view.InputLayout
+        android:id="@+id/il_caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="40dp"
+        app:custom_goneError="true"
+        app:custom_hint="@string/caption"
+        app:custom_ime="actionDone"
+        app:custom_textColor="#e6ffffff"
+        app:custom_type="text"
+        app:layout_constraintBottom_toBottomOf="@+id/v_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/iv_share"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_bottom" />
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="10dp"
+        android:src="@drawable/ic_share"
+        app:layout_constraintBottom_toBottomOf="@+id/v_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_bottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">AlcoControl</string>
+    <string name="mail">info@alcocontrol.ru</string>
+    <string name="ok">Ок</string>
+    <string name="h">ч.</string>
+    <string name="m">мин.</string>
+    <string name="kg">кг</string>
+    <string name="ml">мл</string>
+
+    <string name="language">Язык</string>
+    <string name="choose_language">ВЫБЕРИТЕ ЯЗЫК</string>
+    <string name="russian">Русский</string>
+    <string name="english">English</string>
+    <string name="_continue">Продолжить</string>
+
+    <string name="attention">Внимание!</string>
+    <string name="warning">Приложение AlcoControl не пропагандирует\nупотребление алкоголя....</string>
+
+    <string name="welcome">Добро пожаловать\nв Alco Control!</string>
+    <string name="adult_question">Вам уже\nисполнилось 18 лет?</string>
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+
+    <string name="sorry">Прости, до 18 лет\nпить нельзя!</string>
+    <string name="close">Закрыть</string>
+
+    <string name="registration">Регистрация</string>
+    <string name="enter_name">ВВЕДИТЕ ВАШЕ ИМЯ</string>
+    <string name="enter_birthday">УКАЖИТЕ ВАШУ ДАТУ РОЖДЕНИЯ</string>
+    <string name="enter_weight">УКАЖИТЕ ВАШ ВЕС</string>
+    <string name="gender">Укажите ваш пол</string>
+    <string name="male">Муж</string>
+    <string name="female">Жен</string>
+    <string name="accept_policy_before">Соглашаюсь с</string>
+    <string name="accept_policy_after">политикой конфиденциальности</string>
+    <string name="privacy_policy">Политика\nконфиденциальности</string>
+    <string name="error_name">Имя должно быть не пустое</string>
+    <string name="error_weight">Вес должен быть больше 0 кг</string>
+    <string name="error_birthday">Возраст должен быть от 18 лет</string>
+    <string name="error_birthday_format">Дата должна быть в формате ДД.ММ.ГГГГ</string>
+
+    <string name="greeting">Приветствуем!</string>
+    <string name="description">Текст, о проекте в несколько строчек,\nпримерно 2–3</string>
+
+    <string name="location">Геолокация</string>
+    <string name="location_massage">Постоянная геолокация нам требуется, чтобы\n.............</string>
+    <string name="skip">Пропустить</string>
+    <string name="allow">Разрешить</string>
+
+    <string name="hello">Привет!</string>
+    <string name="push">Push уведомления</string>
+    <string name="push_massage">Разрешите приложению присылать вам\nуведомления, чтобы не пропускать\nважные события.</string>
+
+    <string name="camera">Доступ к камере</string>
+    <string name="camera_massage">Откройте приложению доступ к камере — это\nпозволит точнее показывать проблему</string>
+
+    <string name="feeling">Ваше\nсамочувствие</string>
+    <string name="feeling_question">Насколько вы себя\nчувствуете\nот 1 до 10?</string>
+    <string name="care">Учитывая ваше\nсамочувствие,\nнастоятельно рекомендуем\nвам отказаться от приема\nспиртного</string>
+
+    <string name="plan">План</string>
+    <string name="enter_drink">НАПИТОК</string>
+    <string name="enter_volume">ОБЪЕМ ЕМКОСТИ</string>
+    <string name="enter_quantity">КОЛИЧЕСТВО ВЫПИТОГО</string>
+    <string name="enter_time">ВРЕМЯ</string>
+    <string name="choose">Выбрать</string>
+    <string name="error_drink">Напиток должен быть выбран</string>
+    <string name="error_volume">Объем должен быть до 1000 мл</string>
+    <string name="error_time">Время должно быть в формате ЧЧ:ММ</string>
+
+    <string name="drink_question">Привет, %1$s!\nЧто будем пить?</string>
+    <string name="drink_kind">ВВЕДИТЕ ВИД ВАШЕГО НАПИТКА</string>
+    <string name="drink_not_found">По запросу \"%1$s\" ничего не найдено!</string>
+
+    <string name="ppm">Промилле</string>
+    <string name="common_time">Общее время</string>
+    <string name="total_count">Всего выпито</string>
+    <string name="beer_glass">%1$d кружка</string>
+    <string name="wine_glass">%1$d фужер</string>
+    <string name="whiskey_glass">%1$d рюмка</string>
+    <string name="other_glass">%1$d бокал</string>
+    <string name="no_plan">Нет плана</string>
+
+    <string name="intox_level">Уровень опьянения %1$d</string>
+    <string name="intox_my_level">Вы на %1$d уровне опьянения</string>
+    <string name="level_progress">%1$d/%2$d</string>
+
+    <string name="caption">ДОБАВИТЬ ПОДПИСЬ&#8230;</string>
+
+    <string name="menu">Меню</string>
+    <string name="menu_change_data">Изменить данные</string>
+    <string name="menu_change_language">Изменить язык</string>
+    <string name="menu_push_settings">Настройки Push уведомлений</string>
+    <string name="menu_rate_app">Оценить приложение в Google Play</string>
+    <string name="menu_share_app">Рассказать о приложении друзьям</string>
+    <string name="menu_faq">Вопрос-ответ</string>
+    <string name="menu_feedback">Обратная связь</string>
+    <string name="menu_offers">Предложения и пожелания улучшения\nприложения</string>
+    <string name="menu_agreement">Пользовательское соглашение</string>
+    <string name="menu_policy">Политика конфиденциальности</string>
+    <string name="menu_rules">Правила проекта</string>
+    <string name="menu_developer">Разработчик</string>
+    <string name="terms_of_use">Пользовательское\nсоглашение</string>
+    <string name="project_rules">Правила\nпроекта</string>
+
+    <string name="change_data">Изменить данные</string>
+    <string name="save">Сохранить</string>
+
+    <string name="change_language">Изменение\nязыка</string>
+
+    <string name="push_settings">Настройки Push\nуведомлений</string>
+    <string name="notification">Уведомление</string>
+    <string name="turn_on">Вкл</string>
+    <string name="turn_off">Выкл</string>
+    <string name="sound">Звук</string>
+    <string name="vibration">Вибрация</string>
+
+    <string name="question_answer">Вопрос-ответ</string>
+    <string name="faq_data">Как изменить данные?</string>
+    <string name="answer_data">Чтобы изменить имя, вес или пол, нужно зайти в настройках в \"изменить данные\", ввести новые данные и нажать на кнопку \"изменить\"</string>
+    <string name="faq_update">Как обновить приложение?</string>
+    <string name="answer_update"> </string>
+    <string name="faq_push">Как выключить push уведомления?</string>
+    <string name="answer_push"> </string>
+    <string name="faq_feeling">Что делать, если тебе стало плохо? </string>
+    <string name="answer_feeling"> </string>
+    <string name="faq_invite">Как пригласить друга?</string>
+    <string name="answer_invite"> </string>
+
+    <string name="feedback">Обратная связь</string>
+    <string name="your_mail">ВВЕДИТЕ ВАШУ ПОЧТУ</string>
+    <string name="your_question">Ваш вопрос</string>
+    <string name="your_text">ВАШ ТЕКСТ&#8230;</string>
+    <string name="send">Отправить</string>
+    <string name="error_mail">Невалидный адрес почты</string>
+    <string name="error_text">Текст должен быть не пустым</string>
+
+    <string name="offers">Предложения и пожелания\nулучшения приложения</string>
+    <string name="your_offers">Ваши предложения и пожелания</string>
+</resources>

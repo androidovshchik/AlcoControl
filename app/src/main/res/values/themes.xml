@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorControlHighlight">@color/colorHighlight</item>
+        <item name="android:fontFamily">@font/la_cartoonerie</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="CameraTheme" parent="BaseTheme">
+        <item name="android:statusBarColor">@android:color/black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppDialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="enableEdgeToEdge">true</item>
+    </style>
+
+    <style name="DisabledButtonStyle">
+        <item name="android:background">@drawable/doodle</item>
+        <item name="android:backgroundTint">@color/colorHighlight</item>
+        <item name="android:enabled">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorGray50</item>
+    </style>
+
+    <style name="GrayButtonStyle">
+        <item name="android:background">@drawable/doodle</item>
+        <item name="android:backgroundTint">@color/colorHighlight</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="GreenButtonStyle">
+        <item name="android:background">@drawable/doodle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DashedBox">
+        <attr name="custom_text" format="string|reference" />
+        <attr name="custom_size" format="dimension|reference" />
+        <attr name="custom_icon" format="reference" />
+        <attr name="custom_dashed" format="boolean|reference" />
+    </declare-styleable>
+    <declare-styleable name="InputLayout">
+        <attr name="custom_type" />
+        <attr name="custom_textColor" format="color|reference" />
+        <attr name="custom_hint" format="string|reference" />
+        <attr name="custom_suffix" format="string|reference" />
+        <attr name="custom_error" format="string|reference" />
+        <attr name="custom_goneError" format="boolean|reference" />
+        <attr name="custom_ime" />
+    </declare-styleable>
+    <declare-styleable name="AlcoholKit">
+        <attr name="custom_textColor" />
+    </declare-styleable>
+</resources>

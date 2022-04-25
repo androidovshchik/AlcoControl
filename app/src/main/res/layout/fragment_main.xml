@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="10dp"
+        android:src="@drawable/ic_camera_stroke"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_search"
+        app:layout_constraintEnd_toStartOf="@+id/iv_search"
+        app:layout_constraintTop_toTopOf="@+id/iv_search" />
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="10dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_menu"
+        app:layout_constraintEnd_toStartOf="@+id/iv_menu"
+        app:layout_constraintTop_toTopOf="@+id/iv_menu" />
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="10dp"
+        android:src="@drawable/ic_hamburger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.alcocontrol.view.VolumeCard
+        android:id="@+id/ic_volume"
+        android:layout_width="@dimen/card_volume_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-11dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_logo"
+        app:layout_constraintStart_toStartOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/ic_time" />
+
+    <com.alcocontrol.view.TimeCard
+        android:id="@+id/ic_time"
+        android:layout_width="@dimen/card_time_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_logo"
+        app:layout_constraintStart_toStartOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/ic_intox" />
+
+    <com.alcocontrol.view.IntoxCard
+        android:id="@+id/ic_intox"
+        android:layout_width="@dimen/card_intox_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_logo"
+        app:layout_constraintStart_toStartOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    <ImageView
+        android:id="@+id/iv_character"
+        android:layout_width="218dp"
+        android:layout_height="313dp"
+        android:layout_marginEnd="12dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/sb_intox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_menu"
+        app:layout_constraintVertical_bias="0.6"
+        tools:src="@drawable/ic_beer_left" />
+
+    <ImageView
+        android:id="@+id/iv_bubble"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bubble"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_menu"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_bubble"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="7sp"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bubble"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bubble"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/iv_bubble"
+        app:layout_constraintTop_toTopOf="@+id/iv_bubble"
+        app:layout_constraintVertical_bias="0.4"
+        tools:text="Ты уже в состоянии хрюшечки!!!"
+        tools:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/ic_baseline_close_24"
+        android:visibility="gone"
+        app:backgroundTint="@color/colorGreen"
+        app:fabCustomSize="31dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bubble"
+        app:layout_constraintTop_toTopOf="@+id/iv_bubble"
+        app:tint="@android:color/white"
+        tools:visibility="visible" />
+
+    <com.alcocontrol.view.AlcoholKit
+        android:id="@+id/al_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        app:custom_textColor="@color/colorGray"
+        app:layout_constraintBottom_toTopOf="@+id/sb_intox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/sb_intox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="10dp"
+        app:isb_show_indicator="none"
+        app:isb_show_tick_texts="true"
+        app:isb_thumb_drawable="@drawable/green_thumb"
+        app:isb_tick_texts_array="@array/drink_values"
+        app:isb_tick_texts_color="#b3000000"
+        app:isb_tick_texts_size="9sp"
+        app:isb_ticks_count="46"
+        app:isb_track_progress_color="@color/colorGreen"
+        app:isb_user_seekable="false"
+        app:layout_constraintBottom_toTopOf="@+id/tv_next"
+        app:layout_constraintEnd_toEndOf="@+id/iv_info"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:isb_progress="23" />
+
+    <com.alcocontrol.view.DashedLine
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sb_intox"
+        app:layout_constraintEnd_toEndOf="@+id/sb_intox"
+        app:layout_constraintStart_toStartOf="@+id/sb_intox"
+        app:layout_constraintTop_toTopOf="@+id/sb_intox" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_flag"
+        app:layout_constraintBottom_toBottomOf="@+id/sb_intox"
+        app:layout_constraintEnd_toEndOf="@+id/sb_intox"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="@+id/sb_intox"
+        app:layout_constraintTop_toTopOf="@+id/sb_intox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="&#8240;"
+        app:layout_constraintBottom_toBottomOf="@+id/sb_intox"
+        app:layout_constraintEnd_toEndOf="@+id/sb_intox"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/sb_intox"
+        app:layout_constraintTop_toTopOf="@+id/sb_intox" />
+
+    <ImageView
+        android:id="@+id/iv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/ic_info"
+        app:layout_constraintBottom_toBottomOf="@+id/sb_intox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sb_intox" />
+
+    <TextView
+        android:id="@+id/tv_next"
+        style="@style/DisabledButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/no_plan"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

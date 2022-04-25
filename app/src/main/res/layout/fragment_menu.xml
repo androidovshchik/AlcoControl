@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/menu"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGray"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_change_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="70dp"
+            app:custom_icon="@drawable/ic_arrow_right"
+            app:custom_text="@string/menu_change_data"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_change_lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="70dp"
+            app:custom_icon="@drawable/ic_arrow_right"
+            app:custom_text="@string/menu_change_language"
+            app:layout_constraintTop_toBottomOf="@+id/db_change_data" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_push_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="70dp"
+            app:custom_icon="@drawable/ic_arrow_right"
+            app:custom_text="@string/menu_push_settings"
+            app:layout_constraintTop_toBottomOf="@+id/db_change_lang" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_rate_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="70dp"
+            app:custom_icon="@drawable/ic_arrow_right"
+            app:custom_text="@string/menu_rate_app"
+            app:layout_constraintTop_toBottomOf="@+id/db_push_set" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_share_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="70dp"
+            app:custom_icon="@drawable/ic_arrow_right"
+            app:custom_text="@string/menu_share_app"
+            app:layout_constraintTop_toBottomOf="@+id/db_rate_app" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="70dp"
+            app:custom_icon="@drawable/ic_arrow_right"
+            app:custom_text="@string/menu_faq"
+            app:layout_constraintTop_toBottomOf="@+id/db_share_app" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="70dp"
+            app:custom_icon="@drawable/ic_arrow_right"
+            app:custom_text="@string/menu_feedback"
+            app:layout_constraintTop_toBottomOf="@+id/db_faq" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_offers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="70dp"
+            app:custom_dashed="false"
+            app:custom_icon="@drawable/ic_arrow_right"
+            app:custom_text="@string/menu_offers"
+            app:layout_constraintTop_toBottomOf="@+id/db_feedback" />
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="7.5dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="7.5dp"
+            android:text="@string/menu_agreement"
+            android:textAllCaps="true"
+            android:textColor="#0460D9"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/db_offers" />
+
+        <TextView
+            android:id="@+id/tv_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="7.5dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="7.5dp"
+            android:text="@string/menu_policy"
+            android:textAllCaps="true"
+            android:textColor="#0460D9"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_agreement" />
+
+        <TextView
+            android:id="@+id/tv_rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="7.5dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="7.5dp"
+            android:text="@string/menu_rules"
+            android:textAllCaps="true"
+            android:textColor="#0460D9"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_policy" />
+
+        <TextView
+            android:id="@+id/tv_developer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="7.5dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="7.5dp"
+            android:text="@string/menu_developer"
+            android:textAllCaps="true"
+            android:textColor="#0460D9"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rules" />
+
+        <include layout="@layout/include_close" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alcocontrol">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <application
+        android:name=".MainApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LanguageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.AttentionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.AgeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.LockActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activity.AgeActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.PermLocationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.PermPushActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.PermCameraActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.CameraActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CameraTheme" />
+    </application>
+
+</manifest>

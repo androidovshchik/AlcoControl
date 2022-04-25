@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_intox_width">107dp</dimen>
+    <dimen name="card_time_width">128dp</dimen>
+    <dimen name="card_volume_width">131dp</dimen>
+</resources>

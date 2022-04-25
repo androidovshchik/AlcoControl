@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/push_settings"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/iv_beer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_notification"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            app:custom_size="18sp"
+            app:custom_text="@string/notification"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_notification_on"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:custom_text="@string/turn_on"
+            app:layout_constraintTop_toBottomOf="@+id/db_notification" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_notification_off"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:custom_text="@string/turn_off"
+            app:layout_constraintTop_toBottomOf="@+id/db_notification_on" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_sound"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            app:custom_size="18sp"
+            app:custom_text="@string/sound"
+            app:layout_constraintTop_toBottomOf="@+id/db_notification_off" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_sound_on"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:custom_text="@string/turn_on"
+            app:layout_constraintTop_toBottomOf="@+id/db_sound" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_sound_vibration"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:custom_text="@string/vibration"
+            app:layout_constraintTop_toBottomOf="@+id/db_sound_on" />
+
+        <com.alcocontrol.view.DashedBox
+            android:id="@+id/db_sound_off"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:custom_text="@string/turn_off"
+            app:layout_constraintTop_toBottomOf="@+id/db_sound_vibration" />
+
+        <include layout="@layout/include_close" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

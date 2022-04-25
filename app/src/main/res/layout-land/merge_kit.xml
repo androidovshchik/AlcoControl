@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_width="wrap_content"
+    tools:layout_height="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/iv_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_beer"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/tv_beer"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_beer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_beer"
+        app:layout_constraintTop_toTopOf="@+id/iv_beer"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_wine"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_wine"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/tv_wine"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_beer"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_wine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_wine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_wine"
+        app:layout_constraintTop_toTopOf="@+id/iv_wine"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_glass"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_glass"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/tv_glass"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_wine"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_glass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_glass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_glass"
+        app:layout_constraintTop_toTopOf="@+id/iv_glass"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_whiskey"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_whiskey"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/tv_whiskey"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_glass"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_whiskey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_whiskey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_whiskey"
+        app:layout_constraintTop_toTopOf="@+id/iv_whiskey"
+        tools:visibility="visible" />
+
+</merge>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/feelingFragment"
+    tools:ignore="UnusedNavigation">
+    <fragment
+        android:id="@+id/feelingFragment"
+        android:name="com.alcocontrol.fragment.FeelingFragment"
+        tools:layout="@layout/fragment_feeling" />
+    <fragment
+        android:id="@+id/planFragment"
+        android:name="com.alcocontrol.fragment.PlanFragment"
+        tools:layout="@layout/fragment_plan" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.alcocontrol.fragment.MainFragment"
+        tools:layout="@layout/fragment_main" />
+</navigation>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/registration" />
+
+        <ImageView
+            android:id="@+id/iv_beer"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:layout_marginBottom="25dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_beer_left"
+            app:layout_constraintBottom_toTopOf="@+id/il_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <com.alcocontrol.view.InputLayout
+            android:id="@+id/il_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="3dp"
+            app:custom_error="@string/error_name"
+            app:custom_hint="@string/enter_name"
+            app:custom_ime="actionNext"
+            app:custom_type="text|textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/il_weight"
+            app:layout_constraintTop_toBottomOf="@+id/iv_beer" />
+
+        <com.alcocontrol.view.InputLayout
+            android:id="@+id/il_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="3dp"
+            app:custom_error="@string/error_weight"
+            app:custom_hint="@string/enter_weight"
+            app:custom_ime="actionNext"
+            app:custom_suffix="@string/kg"
+            app:custom_type="number|numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/il_birthday"
+            app:layout_constraintTop_toBottomOf="@+id/il_name" />
+
+        <com.alcocontrol.view.InputLayout
+            android:id="@+id/il_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            app:custom_hint="@string/enter_birthday"
+            app:custom_ime="actionDone"
+            app:custom_type="datetime|date"
+            app:layout_constraintBottom_toTopOf="@+id/tv_gender"
+            app:layout_constraintTop_toBottomOf="@+id/il_weight" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/gender"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_male"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/il_birthday" />
+
+        <TextView
+            android:id="@+id/tv_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="40dp"
+            android:drawablePadding="8dp"
+            android:gravity="bottom"
+            android:text="@string/male"
+            android:textColor="@color/colorGray30"
+            android:textSize="12sp"
+            app:drawableStartCompat="@drawable/ic_male"
+            app:layout_constraintBottom_toTopOf="@+id/tv_agree"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gender" />
+
+        <TextView
+            android:id="@+id/tv_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:drawablePadding="8dp"
+            android:gravity="bottom"
+            android:text="@string/female"
+            android:textColor="@color/colorGray30"
+            android:textSize="12sp"
+            app:drawableStartCompat="@drawable/ic_female"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_male"
+            app:layout_constraintStart_toEndOf="@+id/tv_male"
+            app:layout_constraintTop_toTopOf="@+id/tv_male" />
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:drawableStart="@drawable/ic_box_inactive"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:text="@string/accept_policy_before"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:buttonTint="@color/colorGreen"
+            app:layout_constraintBottom_toTopOf="@+id/tv_action"
+            app:layout_constraintEnd_toStartOf="@+id/tv_policy"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="0dp"
+            android:text="@string/accept_policy_after"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGreen"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_agree"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_agree"
+            app:layout_constraintTop_toTopOf="@+id/tv_agree"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_action"
+            style="@style/DisabledButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="@string/_continue" />
+
+        <include layout="@layout/include_close" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
